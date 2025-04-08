@@ -33,6 +33,30 @@ struct ContentView: View {
         }
         .padding()
         .background(Color("Background"))
+        
+        TabView {
+                Text("Umpire Mode")
+                    .tabItem {
+                        Image(systemName: "figure.wave")
+                        Text("Umpire")
+                }
+                Text("Score Mode")
+                    .tabItem {
+                        Image(systemName: "oval.portrait.inset.filled")
+                        Text("Score")
+                }
+                Text("Video Stream")
+                    .tabItem {
+                        Image(systemName: "video.fill")
+                        Text("Stream")
+                }
+                Text("Settings Screen")
+                .tabItem {
+                    Image(systemName: "gearshape.fill")
+                    Text("Settings")
+            }
+
+        }
     }
 }
 
