@@ -32,7 +32,7 @@ struct ContentView: View {
             Spacer()
         }
         .padding()
-        //        .background(Color("Background"))
+        .background(Color("Background"))
 
     }
 }
